@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    line-height: 1;
+}
+
+section {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+section.toolbox {
+    right: 0;
+    width: 180px;
+    overflow-y: scroll;
+    background-color: #ffffff;
+    border-left: 1px solid #545454;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+section.toolbox > div {
+	border-bottom: 1px solid #545454;
+    width: 100%;
+    padding-left: 20px;
+}
+
+h2 {
+	margin-bottom: 24px;
+	font-family: inter;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+section.canvas {
+    left: 0;
+    width: calc(100vw - 180px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
